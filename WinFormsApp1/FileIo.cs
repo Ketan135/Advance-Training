@@ -12,10 +12,10 @@ using System.IO;
 namespace WinFormsApp1
 {
 
-    public partial class Form2 : Form
+    public partial class FileIo : Form
     {
         FileStream fs;
-        public Form2()
+        public FileIo()
         {
             InitializeComponent();
         }
