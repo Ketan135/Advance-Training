@@ -69,9 +69,9 @@
             // 
             // writebutton
             // 
-            this.writebutton.Location = new System.Drawing.Point(603, 77);
+            this.writebutton.Location = new System.Drawing.Point(603, 59);
             this.writebutton.Name = "writebutton";
-            this.writebutton.Size = new System.Drawing.Size(75, 23);
+            this.writebutton.Size = new System.Drawing.Size(105, 23);
             this.writebutton.TabIndex = 2;
             this.writebutton.Text = "Write";
             this.writebutton.UseVisualStyleBackColor = true;
@@ -79,9 +79,9 @@
             // 
             // readbutton
             // 
-            this.readbutton.Location = new System.Drawing.Point(603, 152);
+            this.readbutton.Location = new System.Drawing.Point(603, 128);
             this.readbutton.Name = "readbutton";
-            this.readbutton.Size = new System.Drawing.Size(75, 23);
+            this.readbutton.Size = new System.Drawing.Size(105, 23);
             this.readbutton.TabIndex = 3;
             this.readbutton.Text = "Read";
             this.readbutton.UseVisualStyleBackColor = true;
@@ -153,9 +153,9 @@
             // 
             // xmlwritebutton
             // 
-            this.xmlwritebutton.Location = new System.Drawing.Point(603, 204);
+            this.xmlwritebutton.Location = new System.Drawing.Point(603, 183);
             this.xmlwritebutton.Name = "xmlwritebutton";
-            this.xmlwritebutton.Size = new System.Drawing.Size(75, 23);
+            this.xmlwritebutton.Size = new System.Drawing.Size(105, 23);
             this.xmlwritebutton.TabIndex = 12;
             this.xmlwritebutton.Text = "XML Write";
             this.xmlwritebutton.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             // 
             // xmlreadbutton
             // 
-            this.xmlreadbutton.Location = new System.Drawing.Point(603, 269);
+            this.xmlreadbutton.Location = new System.Drawing.Point(603, 241);
             this.xmlreadbutton.Name = "xmlreadbutton";
             this.xmlreadbutton.Size = new System.Drawing.Size(105, 23);
             this.xmlreadbutton.TabIndex = 13;
@@ -173,9 +173,9 @@
             // 
             // soapwritebutton
             // 
-            this.soapwritebutton.Location = new System.Drawing.Point(633, 312);
+            this.soapwritebutton.Location = new System.Drawing.Point(603, 285);
             this.soapwritebutton.Name = "soapwritebutton";
-            this.soapwritebutton.Size = new System.Drawing.Size(75, 23);
+            this.soapwritebutton.Size = new System.Drawing.Size(105, 23);
             this.soapwritebutton.TabIndex = 14;
             this.soapwritebutton.Text = "SOAP Write";
             this.soapwritebutton.UseVisualStyleBackColor = true;
@@ -183,9 +183,9 @@
             // 
             // soapreadbutton
             // 
-            this.soapreadbutton.Location = new System.Drawing.Point(633, 372);
+            this.soapreadbutton.Location = new System.Drawing.Point(603, 335);
             this.soapreadbutton.Name = "soapreadbutton";
-            this.soapreadbutton.Size = new System.Drawing.Size(75, 23);
+            this.soapreadbutton.Size = new System.Drawing.Size(105, 23);
             this.soapreadbutton.TabIndex = 15;
             this.soapreadbutton.Text = "SOAP Read";
             this.soapreadbutton.UseVisualStyleBackColor = true;
