@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.Runtime.Serialization.Formatters.Soap;
-
+using System.Text.Json;
 
 namespace WindowsFormsApp2
 {
@@ -161,5 +161,51 @@ namespace WindowsFormsApp2
         {
             label.Text = "";
         }
-    }
+
+        private void jsonbutton_Click(object sender, EventArgs e)
+        {
+                try
+                {
+                    Department dept = new Department();
+                    dept.Name = nametextBox.Text;
+                    dept.Email = emailtextBox.Text;
+                    dept.Contact =Convert.ToInt32(contacttextBox.Text);
+                    dept.Address = addresstextBox.Text;
+                  
+                   FileStream fs = new FileStream(@"D:\Employee Info\jsonInformation", FileMode.Create, FileAccess.Write);
+                   JsonSerializer.Serialize(fs, dept);
+                    MessageBox.Show("Done");
+                    fs.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+               
+            }
+
+        private void jsonreadbutton_Click(object sender, EventArgs e)
+        {
+            
+                try
+                {
+                    Department dept = new Department();
+                    FileStream fs = new FileStream(@"D:\Employee Info\EmployeeJson", FileMode.Open, FileAccess.Read);
+                    dept = JsonSerializer.Deserialize<Department>(fs);               //change here. 
+                    nametextBox.Text = dept.Name;
+                    emailtextBox.Text = dept.Email;
+                    contacttextBox.Text = dept.Contact.ToString();
+                    addresstextBox.Text = dept.Address;
+                fs.Close ();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+            }
+        }
 }
+    
+

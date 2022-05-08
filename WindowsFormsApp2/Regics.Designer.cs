@@ -45,6 +45,8 @@
             this.soapwritebutton = new System.Windows.Forms.Button();
             this.soapreadbutton = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
+            this.jsonbutton = new System.Windows.Forms.Button();
+            this.jsonreadbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // showbutton
@@ -69,7 +71,7 @@
             // 
             // writebutton
             // 
-            this.writebutton.Location = new System.Drawing.Point(603, 59);
+            this.writebutton.Location = new System.Drawing.Point(603, 12);
             this.writebutton.Name = "writebutton";
             this.writebutton.Size = new System.Drawing.Size(105, 23);
             this.writebutton.TabIndex = 2;
@@ -79,7 +81,7 @@
             // 
             // readbutton
             // 
-            this.readbutton.Location = new System.Drawing.Point(603, 128);
+            this.readbutton.Location = new System.Drawing.Point(603, 41);
             this.readbutton.Name = "readbutton";
             this.readbutton.Size = new System.Drawing.Size(105, 23);
             this.readbutton.TabIndex = 3;
@@ -153,7 +155,7 @@
             // 
             // xmlwritebutton
             // 
-            this.xmlwritebutton.Location = new System.Drawing.Point(603, 183);
+            this.xmlwritebutton.Location = new System.Drawing.Point(603, 88);
             this.xmlwritebutton.Name = "xmlwritebutton";
             this.xmlwritebutton.Size = new System.Drawing.Size(105, 23);
             this.xmlwritebutton.TabIndex = 12;
@@ -163,7 +165,7 @@
             // 
             // xmlreadbutton
             // 
-            this.xmlreadbutton.Location = new System.Drawing.Point(603, 241);
+            this.xmlreadbutton.Location = new System.Drawing.Point(603, 117);
             this.xmlreadbutton.Name = "xmlreadbutton";
             this.xmlreadbutton.Size = new System.Drawing.Size(105, 23);
             this.xmlreadbutton.TabIndex = 13;
@@ -173,7 +175,7 @@
             // 
             // soapwritebutton
             // 
-            this.soapwritebutton.Location = new System.Drawing.Point(603, 285);
+            this.soapwritebutton.Location = new System.Drawing.Point(603, 163);
             this.soapwritebutton.Name = "soapwritebutton";
             this.soapwritebutton.Size = new System.Drawing.Size(105, 23);
             this.soapwritebutton.TabIndex = 14;
@@ -183,7 +185,7 @@
             // 
             // soapreadbutton
             // 
-            this.soapreadbutton.Location = new System.Drawing.Point(603, 335);
+            this.soapreadbutton.Location = new System.Drawing.Point(603, 192);
             this.soapreadbutton.Name = "soapreadbutton";
             this.soapreadbutton.Size = new System.Drawing.Size(105, 23);
             this.soapreadbutton.TabIndex = 15;
@@ -199,11 +201,33 @@
             this.label.Size = new System.Drawing.Size(0, 16);
             this.label.TabIndex = 16;
             // 
+            // jsonbutton
+            // 
+            this.jsonbutton.Location = new System.Drawing.Point(603, 241);
+            this.jsonbutton.Name = "jsonbutton";
+            this.jsonbutton.Size = new System.Drawing.Size(105, 23);
+            this.jsonbutton.TabIndex = 17;
+            this.jsonbutton.Text = "JSON  Write";
+            this.jsonbutton.UseVisualStyleBackColor = true;
+            this.jsonbutton.Click += new System.EventHandler(this.jsonbutton_Click);
+            // 
+            // jsonreadbutton
+            // 
+            this.jsonreadbutton.Location = new System.Drawing.Point(603, 270);
+            this.jsonreadbutton.Name = "jsonreadbutton";
+            this.jsonreadbutton.Size = new System.Drawing.Size(105, 23);
+            this.jsonreadbutton.TabIndex = 18;
+            this.jsonreadbutton.Text = "JSON Read";
+            this.jsonreadbutton.UseVisualStyleBackColor = true;
+            this.jsonreadbutton.Click += new System.EventHandler(this.jsonreadbutton_Click);
+            // 
             // Regics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.jsonreadbutton);
+            this.Controls.Add(this.jsonbutton);
             this.Controls.Add(this.label);
             this.Controls.Add(this.soapreadbutton);
             this.Controls.Add(this.soapwritebutton);
@@ -247,5 +271,7 @@
         private System.Windows.Forms.Button soapwritebutton;
         private System.Windows.Forms.Button soapreadbutton;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Button jsonbutton;
+        private System.Windows.Forms.Button jsonreadbutton;
     }
 }
