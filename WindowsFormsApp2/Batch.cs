@@ -11,8 +11,8 @@ namespace WindowsFormsApp2
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Start { get; set; }
-        public int End { get; set; }
+        public string Start { get; set; }
+        public string End { get; set; }
         public string Location { get; set; }
         public string Trainer { get; set; }
     }

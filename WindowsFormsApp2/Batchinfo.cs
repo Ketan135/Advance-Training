@@ -44,8 +44,8 @@ namespace WindowsFormsApp2
                 Batch b1= new Batch();
                 b1.Id = Convert.ToInt32(idtextBox.Text);
                 b1.Name = nametextBox.Text;
-                b1.Start = Convert.ToInt32(starttextBox.Text);
-                b1.End = Convert.ToInt32(endtextBox.Text);
+                b1.Start =starttextBox.Text;
+                b1.End = endtextBox.Text;
                 b1.Trainer = trainertextBox.Text;
                 b1.Location = locationtextBox.Text;
                 FileStream fs = new FileStream(@"D:\Employee Info\batchinformation", FileMode.Create, FileAccess.Write);
