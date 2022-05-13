@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,10 +15,11 @@ namespace HomeWork.Collection
             this.id = id;
             this.sal = sal;
         }
-        public int CompareTo(Object obj)
+       *//* public int CompareTo(Object obj)
         {
             Emp e2=(Emp)obj;
-            if()
-        }
+            if
+        }*//*
     }
 }
+*/
